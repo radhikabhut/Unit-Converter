@@ -1,0 +1,53 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts/main.js"></script>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <form id="unitConverterForm" action="/" method="POST">
+        <input type="number" name="value" id="value" step="any" required value="{{.Value}}">
+
+        <select id="fromUnit" name="from_unit" required>
+            <option value="">Select From Unit</option>
+            <optgroup label="Length">
+                <option value="meters" data-category="length">Meters</option>
+                <option value="kilometers" data-category="length">Kilometers</option>
+                <option value="centimeters" data-category="length">Centimeters</option>
+                <option value="millimeters" data-category="length">Millimeters</option>
+            </optgroup>
+            <optgroup label="Weight">
+                <option value="grams" data-category="weight">Grams</option>
+                <option value="milligrams" data-category="weight">Milligrams</option>
+                <option value="pounds" data-category="weight">Pounds</option>
+                <option value="kilograms" data-category="weight">Kilograms</option>
+            </optgroup>
+            <optgroup label="Temperature">
+                <option value="celsius" data-category="temperature">Celsius</option>
+                <option value="fahrenheit" data-category="temperature">Fahrenheit</option>
+                <option value="kelvin" data-category="temperature">Kelvin</option>
+                
+            </optgroup>
+            <!-- Add more units as needed -->
+        </select>
+        to
+        <select id="toUnit" name="to_unit" required>
+            <option value="">Select To Unit</option>
+            <!-- Options will be populated based on From Unit selection -->
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+    {{if .Result}}
+    <p>Result: {{.Result}}</p>
+    {{end}}
+
+    {{if .error}}
+    <p>error: {{.error}}</p>
+    {{end}}
+    
+</body>
+</html>
