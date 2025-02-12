@@ -7,8 +7,6 @@ A simple web application that allows users to convert between various units of m
 
 - **Length Conversion**: Convert between millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles.
 - **Weight Conversion**: Convert between milligrams, grams, kilograms, ounces, and pounds.
-- **Volume Conversion**: Convert between milliliters, liters, cubic meters, teaspoons, tablespoons, and cups.
-- **Area Conversion**: Convert between square millimeters, square centimeters, square meters, square kilometers, acres, and hectares.
 - **Temperature Conversion**: Convert between Celsius, Fahrenheit, and Kelvin.
 
 ## Requirements
