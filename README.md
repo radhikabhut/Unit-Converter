@@ -1,7 +1,7 @@
 # Unit-Converter
 [.](https://roadmap.sh/projects/unit-converter)
 
-A simple web application that allows users to convert between various units of measurement, including length, weight, volume, area, temperature, and more.
+A simple web application that allows users to convert between various units of measurement, including length,weight,temperature.
 
 ## Features
 
@@ -30,5 +30,5 @@ A simple web application that allows users to convert between various units of m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/unit-converter.git
+   git clone https://github.com/radhikabhut/unit-converter.git
    cd unit-converter
